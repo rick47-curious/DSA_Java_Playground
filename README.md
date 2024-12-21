@@ -42,4 +42,14 @@
 LinkedList can be better suited for addition and removal of elements for its node based structure in contrast to array with its complex computation logics.
 Node -> data with a address pointer.
 
-Stack extends the Vector class. It follows a LIFO principle for data insertion and removal logic. 
+Stack extends the Vector class. It follows a LIFO principle for data insertion and removal logic.Both stack and vector are synchronized or thread-safe.
+
+| Feature              | ArrayList      | LinkedList         | Vector          | Stack           |
+|-----------------------|----------------|--------------------|-----------------|-----------------|
+| **Data Structure**   | Dynamic Array  | Doubly Linked List | Dynamic Array   | Dynamic Array   |
+| **Access Time**       | O(1) (fast)    | O(n) (slow)        | O(1) (fast)     | O(1) (fast)     |
+| **Insertion/Deletion**| O(n) (slow)    | O(1) (fast)        | O(n) (slow)     | O(n) (slow)     |
+| **Thread-Safe**       | No             | No                 | Yes             | Yes             |
+| **Best Use Case**     | Random Access  | Frequent Inserts/Deletes | Thread-safe List | LIFO Scenarios |
+| **Synchronized?**     | No             | No                 | Yes             | Yes             |
+
